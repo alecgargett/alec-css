@@ -1,0 +1,212 @@
+:root
+{   --font-family-main: 'Roboto', 'Gill Sans MT', Liberation Sans, Arial, sans-serif;   }
+
+.lightmode
+{   background: linear-gradient(to right, rgb(255, 239, 205) 0%, rgb(255, 174, 0) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    font-family: var(--font-family-main);
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;   }
+    
+.darkmode
+{   background: linear-gradient(to right, rgb(0,0,0) 0%, rgb(0, 15, 55) 95%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: var(--font-family-main);
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;   }
+
+.background
+{   background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   }
+
+.pagemargin
+{    padding: 8px;   }
+
+.articlemargin
+{    padding: 8px;   }
+
+
+@media screen and (min-width: 720px) {
+    .articlemargin {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .articlemargin {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .articlemargin {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .articlemargin {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .articlemargin {
+        width: 50vw;
+    }
+}
+
+.darkmode a:hover, .lightmode a:hover
+{   transition: color 0.3s ease-in-out;   }
+
+.darkmode a:link
+{  color: rgb(111, 225, 255);   }
+
+.darkmode a:hover
+{    color: greenyellow;   }
+
+.darkmode a:active
+{   color: rgb(255, 255, 0);   }
+
+.lightmode a:link
+{  color: rgb(22, 88, 155);   }
+
+.lightmode a:hover
+{    color: rgb(0, 222, 111);   }
+
+.lightmode a:active
+{   color: rgb(0, 255, 222);   }
+
+.darkmode .disappearing
+{   color: black;
+    opacity: 0;   }
+  
+.darkmode .disappearing:hover
+{   color: white;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.0);  }
+
+.lightmode .disappearing
+{   color: white;
+        opacity: 0;   }
+      
+.lightmode .disappearing:hover
+{   color: black;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.0);   }
+
+.black-shadow
+{   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);   }
+
+.white-shadow
+{   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);   }
+
+h1
+{   text-align: left;
+    font-weight: 500;   }
+
+h2
+{   text-align: left;
+    font-weight: 400;   }
+
+h3, h4
+{   text-align: left;
+    font-weight: 400;   }
+
+header h1
+{   margin-bottom: 0px;  }
+
+header h2, header h3, header h4
+{   margin-top: 0px;  }
+
+p.drop::first-letter
+{   font-size: 1.5rem;
+    margin: 0.1em 0.1em 0.2em 0;
+    font-weight: 500;   }
+
+blockquote
+{   font-style: italic;   }
+
+.homenav
+{   font-weight: 500;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    gap: 50px;
+    margin: 200px;
+}
+
+a
+{   font-family: 'Silkscreen', var(--font-family-main);;
+    text-decoration: none;   }
+
+a:link
+{   color: rgb(0, 255, 26);   }
+
+a:visited
+{   color: greenyellow;   }
+
+a:hover
+{   color: rgb(241, 255, 47);   }
+
+a:active
+{   color: greenyellow;   }
+
+ul
+{   list-style-type: none;   }
+
+fieldset
+{   width: 600px;
+    border: 1px solid rgb(0, 15, 55);
+    padding: 8px;   }
+
+td
+{   width: 170px;   }
+
+label
+{   width: 170px;   }
+
+input
+{   width: 170px;   }
+
+select
+{   width: 170px;   
+    background: rgb(200, 255, 255);
+    border: 1px solid rgb(0, 15, 55);
+    border-radius: 5px;
+    font-weight: bold;   }
+
+.blue
+{   background-color: rgb(200, 255, 255);   }
+
+.button
+{   width: 170px;
+    color: white;
+    background: rgba(0, 15, 55);
+    border: 1px solid rgb(0, 15, 55);
+    border-radius: 5px;
+    font-weight: bold;   }
+
+.button:hover
+{   background: linear-gradient(to bottom right, rgb(0, 140, 186), rgb(4, 170, 109));   }
+
+.border
+{   border: 1px solid rgb(0, 15, 55);
+    padding: 5px;   }
+
+.right
+{   text-align: right;   }
+
+.centre
+{   text-align: center;   }
