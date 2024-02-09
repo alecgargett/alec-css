@@ -33,19 +33,6 @@
 .articlemargin
 {    padding: 8px;   }
 
-
-@media screen and (min-width: 720px) {
-    .articlemargin {
-        width: 50vw;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .articlemargin {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .articlemargin {
         width: 100%;
