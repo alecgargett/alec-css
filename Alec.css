@@ -28,46 +28,44 @@
     background-repeat: no-repeat;   }
 
 .pagemargin
-{    padding: 8px;   }
+{   padding: 8px;   }
 
 .articlemargin
-{    padding: 8px;   }
+{   padding: 8px;   }
 
 @media screen and (max-width: 480px) {
-    .articlemargin {
-        width: 100%;
-    }
+    .articlemargin {   width: 100%;   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .articlemargin {
-        width: 80%;
-    }
+    .articlemargin {   width: 80%;   }
 }
 
 @media screen and (min-width: 1025px) {
-    .articlemargin {
-        width: 50vw;
-    }
+    .articlemargin {   width: 50vw;   }
 }
+
+a
+{   font-family: 'Silkscreen', var(--font-family-main);;
+    text-decoration: none;   }
 
 .darkmode a:hover, .lightmode a:hover
 {   transition: color 0.3s ease-in-out;   }
 
 .darkmode a:link
-{  color: rgb(111, 225, 255);   }
+{   color: rgb(111, 225, 255);   }
 
 .darkmode a:hover
-{    color: greenyellow;   }
+{   color: greenyellow;   }
 
 .darkmode a:active
 {   color: rgb(255, 255, 0);   }
 
 .lightmode a:link
-{  color: rgb(22, 88, 155);   }
+{   color: rgb(22, 88, 155);   }
 
 .lightmode a:hover
-{    color: rgb(0, 222, 111);   }
+{   color: rgb(0, 222, 111);   }
 
 .lightmode a:active
 {   color: rgb(0, 255, 222);   }
@@ -133,22 +131,6 @@ blockquote
     gap: 50px;
     margin: 200px;
 }
-
-a
-{   font-family: 'Silkscreen', var(--font-family-main);;
-    text-decoration: none;   }
-
-a:link
-{   color: rgb(0, 255, 26);   }
-
-a:visited
-{   color: greenyellow;   }
-
-a:hover
-{   color: rgb(241, 255, 47);   }
-
-a:active
-{   color: greenyellow;   }
 
 ul
 {   list-style-type: none;   }
