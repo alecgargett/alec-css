@@ -1,0 +1,100 @@
+/* prestyles.css */
+
+:root
+{   --font-family-main: 'Roboto', 'Gill Sans MT', Liberation Sans, Arial, sans-serif;
+    --yellow-outer: rgb(255, 174, 0);
+    --yellow-inner: rgb(255, 220, 100);
+    --blue-outer: rgb(0, 20, 60)
+    --blue-text: rgb(111, 225, 255);   }
+
+.lightmode
+{   background: linear-gradient(to right, var(--yellow-outer) 0%, var(--yellow-inner) 25%, var(--yellow-inner) 75%, var(--yellow-outer) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(0, 0, 66);
+    font-family: var(--font-family-main);
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;   }
+    
+.darkmode
+{   background: linear-gradient(to right, var(--blue-outer) 0%, rgb(0,0,0) 50%, var(--blue-outer) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: var(--font-family-main);
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;   }
+
+nav
+{   margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;       }
+
+.homenav
+{   font-weight: 500;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    gap: 50px;
+    margin: 200px;   }
+
+a
+{   font-family: 'Silkscreen', var(--font-family-main);;
+    text-decoration: none;   }
+
+.lightmode a, .lightmode a:visited
+{   color: rgb(22, 88, 155);   }
+
+.darkmode a, .darkmode a:visited
+{   color: var(--blue-text);   }
+
+header h1
+{   margin-bottom: 0px;  }
+
+header h2, header h3, header h4
+{   margin-top: 0px;  }
+    
+h1
+{   text-align: left;
+    font-weight: 500;   }
+
+h2, h3
+{   text-align: left;
+    font-weight: 400;   }
+
+h4
+{   margin-bottom: 4px;}
+
+p
+{   margin-top: 4px;  }
+
+.subheading
+{   text-align: left;
+    font-weight: 300;   }
+
+p.drop::first-letter
+{   font-size: 1.5rem;
+    margin: 0.1em 0.1em 0.2em 0;
+    font-weight: 500;   }
+
+.button
+{   margin-left: 50px;
+    margin-right: 50px;
+    width: 170px;
+    color: white;
+    background: rgba(0, 15, 55);
+    border: 1px solid rgb(0, 15, 55);
+    border-radius: 5px;
+    font-weight: bold;   }
+
+sup
+{   font-size: x-small;   }

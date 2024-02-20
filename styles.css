@@ -1,0 +1,50 @@
+:root
+{   --font-family-main: 'Roboto', 'Gill Sans MT', Liberation Sans, Arial, sans-serif;
+    --yellow-outer: rgb(255, 174, 0);
+    --yellow-inner: #ffdc64;
+    --blue-outer: rgb(0, 20, 60);
+    --blue-inner: rgb(0, 20, 40);
+    --blue-text: rgb(111, 225, 255);   }
+
+main
+{   padding: 0%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;   }
+
+.middle-column
+{   max-width: 400px;   }
+
+.lightmode .left-column
+{   background: linear-gradient(to right, var(--yellow-outer) 0%, var(--yellow-inner) 100%);   }
+
+.lightmode .middle-column
+{   background: var(--yellow-inner);   }
+
+.lightmode .right-column
+{   background: linear-gradient(to right, var(--yellow-inner) 0%, var(--yellow-outer) 100%);   }
+
+.lightmode a:hover, .darkmode a:hover
+{   transition: color 0.2s ease-in-out;   }
+
+.lightmode a:hover
+{   color: rgb(0, 222, 111);   }
+
+.lightmode a:active
+{   color: rgb(0, 255, 222);   }
+
+.darkmode a:hover
+{   color: greenyellow;   }
+
+.darkmode a:active
+{   color: rgb(255, 255, 0);   }
+
+.disappearing
+{   opacity: 0;
+    transition: opacity 0.4s ease-in-out;   }
+      
+.disappearing:hover
+{   opacity: 1;
+    transition: opacity 0.2s ease-in-out;   }
+
+.button:hover
+{   background: linear-gradient(to bottom right, rgb(0, 140, 186), rgb(4, 170, 109));   }
